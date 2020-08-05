@@ -39,6 +39,7 @@ class ...
     def ...
         _logger.warning('Logging Message, Context = %s' % (str(self.env.context)))
 ```
+Logs are available in the *logfile* of Odoo server (/var/log/odoo/odoo-server.log)
 
 ### Controllers
 Using exception, displayed in a popup:
