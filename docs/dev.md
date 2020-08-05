@@ -20,15 +20,6 @@ class ResPartner(models.Model):
 ### Controllers
 - [Official Documentation](https://www.odoo.com/documentation/13.0/reference/http.html#controllers)
 
-Using exception, displayed in a popup:
-```python
-from odoo import exceptions
-class ...
-    def ...
-        ...
-        raise exceptions.UserError('Error message')
-```
-
 ### Views
 - [Official Documentation](https://www.odoo.com/documentation/13.0/reference/views.html#inheritance)
 
@@ -40,8 +31,23 @@ class ...
 During the development phase, it is often needed to do some debugging / logging in order to understand the logic of the application. Similar to inheritance, logging is different for each type of objects used.
 
 ### Models
+Using Python logging module:
+```python
+import logging
+_logger = logging.getLogger(__name__)
+class ...
+    def ...
+        _logger.warning('Logging Message, Context = %s' % (str(self.env.context)))
+```
 
 ### Controllers
+Using exception, displayed in a popup:
+```python
+from odoo import exceptions
+class ...
+    def ...
+        raise exceptions.UserError('Error message')
+```
 
 ### Views
 
