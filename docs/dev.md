@@ -19,6 +19,7 @@ class ResPartner(models.Model):
 
 ### Controllers
 - [Official Documentation](https://www.odoo.com/documentation/13.0/reference/http.html#controllers)
+
 Using exception, displayed in a popup:
 ```python
 raise exceptions.UserError('Error message')
