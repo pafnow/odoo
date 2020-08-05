@@ -22,7 +22,11 @@ class ResPartner(models.Model):
 
 Using exception, displayed in a popup:
 ```python
-raise exceptions.UserError('Error message')
+from odoo import exceptions
+class ...
+    def ...
+        ...
+        raise exceptions.UserError('Error message')
 ```
 
 ### Views
